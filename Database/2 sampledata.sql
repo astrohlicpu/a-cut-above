@@ -1,11 +1,11 @@
 use ACutAboveDB
 go
 
-delete Appointments
+delete Appointment
 go
 
 
-insert Appointments
+insert Appointment
     (ClientFirstName, ClientLastName, PhoneNumber, AppointmentDate, Hairdresser, ServiceReq, Paid, Tips)
     select 'Rivka', 'Adler', '845-425-5462', '2024-07-02 10:15', 'Leah', 'haircut', 1, 5
 union
@@ -28,4 +28,4 @@ union
     select 'Dena', 'Pollack', '578-849-2002', '2024-09-25 15:30', 'Leah', 'hairstyle', 1, 0
 
 
-select * from Appointments
+select * from Appointment
